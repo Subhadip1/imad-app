@@ -1,16 +1,16 @@
-console.log('Loaded!');
-//Change the text of the index.html
-var element = document.getElementById('main-text');
-element.innerHTML="New Value";
-//Move the Image On Click
-var img = document.getElementById('madi');
-var marginLeft = 0;
-function moveRight()
-{
-    marginLeft= marginLeft +5;
-    img.style.marginLeft=marginLeft +'px';
-}
-img.onclick= function()
-{
-    var interval = setInterval(moveRight,50);
+//counter
+
+var button= document.getElementById("counter");
+var counter= 0;
+button.onclick = function(){
+    
+    //Make a response to the server on our click request
+    
+    //Store response in a variable
+    
+    //Render the variable in correct Span
+    
+    counter = counter+1;
+    var span= document.getElementById("count");
+    span.innerHTML = counter.toString(); 
 }
