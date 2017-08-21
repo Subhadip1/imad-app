@@ -1,6 +1,6 @@
 //counter
 
-var button= document.getElementById("counter");
+var button= document.getElementById('counter');
 button.onclick = function(){
     
     //Create a request object
@@ -16,7 +16,7 @@ button.onclick = function(){
             if(requeststatus=== 200){
                 
                 var counter = request.responseText;
-                var span= document.getElementById("count");
+                var span= document.getElementById('count');
                 span.innerHTML = counter.toString(); 
             }
         }
